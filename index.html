@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bail Reckoner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bail Reckoner</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#calculator">Bail Calculator</a></li>
+                <li><a href="#legal-aid">Legal Aid Form</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <h1>Simplifying the Bail Process for Undertrial Prisoners</h1>
+                <p>Streamlining legal support and bail estimation through our easy-to-use tool.</p>
+            </div>
+            <div class="slide">
+                <h1>Empowering Families with Legal Insights</h1>
+                <p>Providing clear information to help you make informed decisions during challenging times.</p>
+            </div>
+            <div class="slide">
+                <h1>Accessible Legal Resources at Your Fingertips</h1>
+                <p>Connecting you with the right legal assistance and resources when you need them most.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <aside class="sidebar left">
+            <h3>Legal Resources</h3>
+            <ul>
+                <li><a href="https://www.justice.gov/usao/justice-101/bail" target="_blank">Bail Laws Explained</a></li>
+                <li><a href="https://www.nolo.com/legal-encyclopedia/free-books/faq-Lawyers.html" target="_blank">Legal Aid Information</a></li>
+                <li><a href="https://www.theguardian.com/law/bail" target="_blank">Recent Bail Cases</a></li>
+                <li><a href="https://www.uscourts.gov/about-federal-courts/court-role-and-structure" target="_blank">Court Procedures</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="about" class="intro">
+                <h2>About Bail Reckoner</h2>
+                <p>Bail Reckoner is a comprehensive platform designed to assist undertrial prisoners and their families in understanding and navigating the complex bail process.</p>
+            </section>
+
+            <section id="calculator" class="calculator">
+                <h2>Bail Calculator</h2>
+                <form id="bail-form">
+                    <label for="crime-severity">Severity of Crime:</label>
+                    <select id="crime-severity" name="crime-severity" required>
+                        <option value="misdemeanor">Misdemeanor</option>
+                        <option value="non-violent-felony">Non-violent Felony</option>
+                        <option value="violent-felony">Violent Felony</option>
+                        <option value="drug-trafficking">Drug Trafficking</option>
+                        <option value="fraud">Fraud</option>
+                        <option value="theft">Theft</option>
+                        <option value="murder">Murder</option>
+                    </select>
+
+                    <label for="time-served">Time Served (in months):</label>
+                    <input type="number" id="time-served" name="time-served" required>
+
+                    <label for="history">Prior Criminal History:</label>
+                    <select id="history" name="history" required>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+
+                    <label for="flight-risk">Flight Risk:</label>
+                    <select id="flight-risk" name="flight-risk" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                    <label for="danger-society">Danger to Society:</label>
+                    <select id="danger-society" name="danger-society" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                    <label for="financial-stability">Financial Stability:</label>
+                    <select id="financial-stability" name="financial-stability" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                    <button type="button" onclick="calculateBail()">Calculate Bail Eligibility</button>
+                </form>
+
+                <div id="bail-result" class="bail-result hidden"></div>
+            </section>
+
+            <section id="legal-aid" class="legal-aid">
+                <h2>Legal Aid Form</h2>
+                <p>Our Legal Aid Form will be integrated soon.</p>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <button class="accordion-button">What is bail?</button>
+                    <div class="accordion-content">
+                        <p>Bail is a legal mechanism that allows a defendant to be released from custody in exchange for money or security.</p>
+                    </div>
+
+                    <button class="accordion-button">How is bail determined?</button>
+                    <div class="accordion-content">
+                        <p>The court determines bail based on factors like the severity of the crime, flight risk, and prior criminal history. <a href="https://www.nolo.com/legal-encyclopedia/bail.html" target="_blank">Learn more</a>.</p>
+                    </div>
+
+                    <button class="accordion-button">Can bail be denied?</button>
+                    <div class="accordion-content">
+                        <p>Yes, bail can be denied if the defendant poses a significant risk to the community or has a high flight risk. <a href="https://www.uscourts.gov/services-forms/bail" target="_blank">Find out more</a>.</p>
+                    </div>
+
+                    <button class="accordion-button">What happens if bail conditions are violated?</button>
+                    <div class="accordion-content">
+                        <p>Violating bail conditions can lead to re-arrest, forfeiture of the bail amount, or additional charges. <a href="https://www.justice.gov/usao/re-arrest" target="_blank">More details</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar right">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://www.avvo.com/find-a-lawyer" target="_blank">Lawyer Directories</a></li>
+                <li><a href="https://www.legalzoom.com/" target="_blank">Legal Services</a></li>
+                <li><a href="https://www.bailbondshq.com/" target="_blank">Bail Bonds Directory</a></li>
+                <li><a href="https://www.justice.gov/" target="_blank">Department of Justice</a></li>
+                <li><a href="https://www.aclu.org/" target="_blank">ACLU Legal Help</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Bail Reckoner. All Rights Reserved.</p>
+            <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
