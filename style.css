@@ -57,7 +57,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+#legal-a{
+    background-color: orange;
+    /* font-size: 2rem; */
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+#legal-a:hover{
+    color: blue;
+}
 .slider {
     position: relative;
     width: 100%;
