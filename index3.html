@@ -106,6 +106,102 @@
                         <textarea id="additionalComments" name="additionalComments" placeholder="Any additional information relevant to your bail application"></textarea>
                     </div>
                     <button type="submit">Submit Bail Application</button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+                    <button type="button" onclick="generatePDF()">Generate PDF</button>
+                    <script>
+                        function generatePDF() {
+                          const { jsPDF } = window.jspdf;
+                          const doc = new jsPDF();
+                        
+                          // Center the heading
+                          doc.setFontSize(22); // H1 size
+                          doc.setFont("helvetica", "bold");
+                        
+                          const title = "Comprehensive Bail Application Form";
+                          const pageWidth = doc.internal.pageSize.getWidth();
+                          const titleWidth = doc.getTextDimensions(title).w;
+                          const titleX = (pageWidth - titleWidth) / 2; // Center the title horizontally
+                        
+                          doc.text(title, titleX, 20);
+                        
+                          // Subscript for helpline
+                          doc.setFontSize(10); // Smaller font for subscript
+                          const helplineText = "Helpline: +1-800-123-4567 for important details";
+                          const helplineWidth = doc.getTextDimensions(helplineText).w;
+                          const helplineX = (pageWidth - helplineWidth) / 2; // Center the helpline horizontally
+                        
+                          doc.text(helplineText, helplineX, 27); // Slightly below the heading
+                        
+                          // Set font size and style for the content
+                          doc.setFontSize(12); // Regular size for content
+                          doc.setFont("helvetica", "normal");
+                        
+                          // Get form data
+                          const fullName = document.querySelector('input[name="fullName"]').value;
+                          const dateOfBirth = document.querySelector('input[name="dateOfBirth"]').value;
+                          const address = document.querySelector('input[name="address"]').value;
+                          const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+                          const email = document.querySelector('input[name="email"]').value;
+                          const employmentStatus = document.querySelector('select[name="employmentStatus"]').value;
+                          const chargesFiled = document.querySelector('input[name="chargesFiled"]').value;
+                          const arrestDate = document.querySelector('input[name="arrestDate"]').value;
+                        
+                          const bailAmount = document.querySelector('input[name="bailAmount"]').value;
+                          const criminalHistory = document.querySelector('input[name="criminalHistory"]:checked').value;
+                          const financialResources = document.querySelector('textarea[name="financialResources"]').value;
+                          const communityTies = document.querySelector('textarea[name="communityTies"]').value;
+                          const legalRepresentation = document.querySelector('input[name="legalRepresentation"]:checked').value;
+                          const additionalComments = document.querySelector('textarea[name="additionalComments"]').value;
+                        
+                          // Get attorney's name
+                          const attorneyName = document.querySelector('input[name="attorneyName"]').value;
+                        
+                          // Add content with spacing and formatting
+                          const lineSpacing = 10;
+                          let currentY = 40; // Starting Y position after the heading and subscript
+                        
+                          doc.text(`Full Name: ${fullName}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Date of Birth: ${dateOfBirth}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Address: ${address}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Phone Number: ${phoneNumber}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Email: ${email}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Employment Status: ${employmentStatus}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Charges Filed: ${chargesFiled}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Arrest Date: ${arrestDate}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Bail Amount: ${bailAmount}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Criminal History: ${criminalHistory}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Financial Resources: ${financialResources}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Community Ties: ${communityTies}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Legal Representation: ${legalRepresentation}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Attorney Name: ${attorneyName}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Additional Comments: ${additionalComments}`, 20, currentY);
+                        
+                          // Add signatures
+                          doc.setFontSize(12);
+                          doc.setTextColor(0, 0, 0); // Reset color to black
+                          doc.text('Signature of Victim:', 20, doc.internal.pageSize.getHeight() - 30);
+                          doc.text('Signature of Lawyer:', pageWidth - 70, doc.internal.pageSize.getHeight() - 30);
+                        
+                          // Save the PDF
+                          doc.save("Bail_Application.pdf");
+                        }
+                        </script>
+                        
+                        
                 </form>
             </div>
         </div>
