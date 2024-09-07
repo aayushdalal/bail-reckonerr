@@ -58,6 +58,9 @@ body {
     align-items: center;
 }
 #legal-a{
+    position: relative;
+    top:20px;
+    /* margin-top:20px; */
     background-color: orange;
     /* font-size: 2rem; */
     border: 1px solid white;
