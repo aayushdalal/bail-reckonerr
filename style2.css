@@ -1,22 +1,23 @@
 /* General styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#5e503f;
-    color: #212529;
+    background-color: #343a40;
+    color: #333;
     margin: 0;
     padding: 20px;
 }
 
 /* Container */
 .container {
-    max-width: 800px;
+    width: 80vw;
+    /* max-width: 800px; */
     margin: auto;
     padding: 20px;
 }
 
 /* Card styles */
 .card {
-    background-color: #ffffff;
+    background-color: #333;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +28,7 @@ body {
 .card-header {
     font-size: 24px;
     font-weight: 600;
-    color: #343a40;
+    color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
     border-bottom: 2px solid #343a40;
@@ -36,6 +37,7 @@ body {
 
 /* Form grid layout */
 .form-grid {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -49,7 +51,7 @@ body {
 /* Label styles */
 label {
     font-weight: 500;
-    color: #495057;
+    color: #f9fbfe;
     margin-bottom: 5px;
 }
 
@@ -82,13 +84,59 @@ textarea {
 /* Radio group styles */
 .radio-group {
     display: flex;
+    
     justify-content: flex-start;
     gap: 20px;
 }
+#legall{
+    border: 1px solid white;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+#legal-group{
+    position: relative;
+}
+#attorneyNameContainer{
+    padding-top: 10px;
+    font-size: 1.2em;
+    position: absolute;
+    left:180px;
+    bottom: 15px;
+}
+#criminal-group{
+    position: relative;
+}
+#criminal-group div{
+    position: absolute;
+    
+}
+#criminal-history{
+    border: 1px solid white;
+    padding-left: 9px;
+    height: 100px;
+    display:flex;
+    justify-content: space-around;
 
+}
+#arres{
+   /* height: 80px;
+   width: 100px;
+   border: 1px solid white;
+   padding-top:4px;
+   padding-bottom: 5px;
+   padding-left: 3px; */
+   bottom:9px;
+   left:250px;
+
+   
+}
+#conv{
+  left:400px;
+  bottom: 9px;
+}
 .radio-group label {
     font-weight: 400;
-    color: #495057;
+    color: #ffffff;
 }
 
 /* Button styles */
@@ -97,15 +145,17 @@ button {
     padding: 12px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #fca311;
+    color: #edf2f4;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.2s;
 }
-
+button a{
+    color: #edf2f4;
+}
 button:hover {
     background-color: #0056b3;
 }
