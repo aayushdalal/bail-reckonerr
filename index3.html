@@ -12,7 +12,7 @@
         <div class="card">
             <h2 class="card-header">Comprehensive Bail Application Form</h2>
             <div class="card-content">
-                <form id="bailForm" class="form-grid">
+                <form action="./index.html" method="get" id="bailForm" class="form-grid">
                     <div>
                         <label for="fullName">Full Name</label>
                         <input type="text" id="fullName" name="fullName" required>
@@ -47,10 +47,46 @@
                         <label for="employer">Employer</label>
                         <input type="text" id="employer" name="employer">
                     </div>
-                    <div>
+                    <div id="criminal-history">
+                        <label>Criminal History</label>
+                        <div class="radio-group" id="criminal-group">
+                            <label><input type="radio" name="criminalHistory" value="yes"> Yes</label>
+                            <label><input type="radio" name="criminalHistory" value="no" checked> No</label>
+                            <div id="criminalHistoryDetails" style="display:none;">
+                                <div id="arres">
+                                    <label>Prior Arrests</label>
+                                    <div class="radio-group" >
+                                        <label><input type="radio" name="priorArrests" value="yes"> Yes</label>
+                                        <label><input type="radio" name="priorArrests" value="no" checked> No</label>
+                                    </div>
+                                </div>
+                                <div id="conv">
+                                    <label>Prior Convictions</label>
+                                    <div class="radio-group" >
+                                        <label><input type="radio" name="priorConvictions" value="yes"> Yes</label>
+                                        <label><input type="radio" name="priorConvictions" value="no" checked> No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="legall">
+                        <label>Legal Representation</label>
+                        <div class="radio-group" id="legal-group">
+                            <label><input type="radio" name="legalRepresentation" value="yes"> Yes</label>
+                            <label><input type="radio" name="legalRepresentation" value="no" checked> No</label>
+                            <div id="attorneyNameContainer" style="display:none;">
+                                <label for="attorneyName">Attorney Name</label>
+                                <input type="text" id="attorneyName" name="attorneyName">
+                            </div>
+                        </div>
+                    </div>
+                    <div >
                         <label for="chargesFiled">Charges Filed</label>
                         <input type="text" id="chargesFiled" name="chargesFiled" required>
                     </div>
+                    
                     <div>
                         <label for="arrestDate">Arrest Date</label>
                         <input type="date" id="arrestDate" name="arrestDate" required>
@@ -60,42 +96,8 @@
                         <input type="number" id="bailAmount" name="bailAmount">
                     </div>
                     <div>
-                        <label>Criminal History</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="criminalHistory" value="yes"> Yes</label>
-                            <label><input type="radio" name="criminalHistory" value="no" checked> No</label>
-                        </div>
-                    </div>
-                    <div id="criminalHistoryDetails" style="display:none;">
-                        <div>
-                            <label>Prior Arrests</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="priorArrests" value="yes"> Yes</label>
-                                <label><input type="radio" name="priorArrests" value="no" checked> No</label>
-                            </div>
-                        </div>
-                        <div>
-                            <label>Prior Convictions</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="priorConvictions" value="yes"> Yes</label>
-                                <label><input type="radio" name="priorConvictions" value="no" checked> No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
                         <label for="financialResources">Financial Resources</label>
                         <textarea id="financialResources" name="financialResources" placeholder="Describe your financial situation and ability to pay bail"></textarea>
-                    </div>
-                    <div>
-                        <label>Legal Representation</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="legalRepresentation" value="yes"> Yes</label>
-                            <label><input type="radio" name="legalRepresentation" value="no" checked> No</label>
-                        </div>
-                    </div>
-                    <div id="attorneyNameContainer" style="display:none;">
-                        <label for="attorneyName">Attorney Name</label>
-                        <input type="text" id="attorneyName" name="attorneyName">
                     </div>
                     <div>
                         <label for="communityTies">Community Ties</label>
@@ -105,9 +107,10 @@
                         <label for="additionalComments">Additional Comments</label>
                         <textarea id="additionalComments" name="additionalComments" placeholder="Any additional information relevant to your bail application"></textarea>
                     </div>
-                    <button type="submit">Submit Bail Application</button>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+                    <button type="submit" onclick="generatePDF()"><a href="./index.html">Submit Bail Application</a></button>
                     <button type="button" onclick="generatePDF()">Generate PDF</button>
+                </form>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
                     <script>
                         function generatePDF() {
                           const { jsPDF } = window.jspdf;
@@ -202,7 +205,7 @@
                         </script>
                         
                         
-                </form>
+               
             </div>
         </div>
     </div>
