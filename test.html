@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bail Probability Predictor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif; /* Matching font style from the image */
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            color: orange;
+            margin-bottom: 40px;
+            text-transform: uppercase; /* Ensures the title is in uppercase like the image */
+        }
+
+        form {
+            background-color: #252422;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: orange;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkorange;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bail Probability Predictor</h1>
+    <form id="bailForm">
+        <label for="crime_type">Crime Type:</label>
+        <select id="crime_type" name="Crime_Type">
+            <option value="" disabled selected>Select Crime Type</option>
+            <option value="Cyber Crime">Cyber Crime</option>
+            <option value="Non-Violent">Non-Violent</option>
+            <option value="Violent">Violent</option>
+            <option value="Drug-related">Drug-related</option>
+            <option value="Economic">Economic</option>
+        </select>
+
+        <label for="socio_status">Socio-Economic Status:</label>
+        <select id="socio_status" name="Socio_Economic_Status">
+            <option value="" disabled selected>Select Socio-Economic Status</option>
+            <option value="High">High</option>
+            <option value="Middle">Middle</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label for="time_served">Time Served (Months):</label>
+        <input type="number" id="time_served" name="Time_Served_Months" placeholder="Enter number of months" value="">
+
+        <label for="criminal_history">Prior Criminal History:</label>
+        <input type="number" id="criminal_history" name="Prior_Criminal_History" placeholder="0 for No .. 1 for Yes" min="0" max="1" value="">
+
+        <label for="flight_risk">Risk of Flight:</label>
+        <input type="number" id="flight_risk" name="Risk_of_Flight" placeholder="Enter value between 0 and 1" min="0" max="1" step="0.1" value="">
+
+        <label for="trial_influence">Influence on Trial:</label>
+        <input type="number" id="trial_influence" name="Influence_on_Trial" placeholder="Enter value between 0 and 1" min="0" max="1" step="0.1" value="">
+
+        <button type="button" onclick="getBailProbability()">Get Bail Probability</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function getBailProbability() {
+            const formData = {
+                Crime_Type: document.getElementById('crime_type').value,
+                Socio_Economic_Status: document.getElementById('socio_status').value,
+                Time_Served_Months: document.getElementById('time_served').value,
+                Prior_Criminal_History: document.getElementById('criminal_history').value,
+                Risk_of_Flight: document.getElementById('flight_risk').value,
+                Influence_on_Trial: document.getElementById('trial_influence').value
+            };
+
+            fetch('http://127.0.0.1:5000/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the result in the desired format
+                const bailProbability = data.bail_probability;
+                document.getElementById('result').innerText = `The probability of getting bail = ${bailProbability.toFixed(2)}%`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

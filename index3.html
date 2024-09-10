@@ -10,9 +10,9 @@
 
     <div class="container">
         <div class="card">
-            <h2 class="card-header">Comprehensive Bail Application Form</h2>
+            <h2 class="card-header" style="color: orange; font-size: 3em; font-weight: bold;" >Comprehensive Bail Application Form</h2>
             <div class="card-content">
-                <form id="bailForm" class="form-grid">
+                <form action="./index.html" method="post" id="bailForm" class="form-grid">
                     <div>
                         <label for="fullName">Full Name</label>
                         <input type="text" id="fullName" name="fullName" required>
@@ -47,10 +47,46 @@
                         <label for="employer">Employer</label>
                         <input type="text" id="employer" name="employer">
                     </div>
-                    <div>
+                    <div id="criminal-history">
+                        <label>Criminal History</label>
+                        <div class="radio-group" id="criminal-group">
+                            <label><input type="radio" name="criminalHistory" value="yes"> Yes</label>
+                            <label><input type="radio" name="criminalHistory" value="no" checked> No</label>
+                            <div id="criminalHistoryDetails" style="display:none;">
+                                <div id="arres">
+                                    <label>Prior Arrests</label>
+                                    <div class="radio-group" >
+                                        <label><input type="radio" name="priorArrests" value="yes"> Yes</label>
+                                        <label><input type="radio" name="priorArrests" value="no" checked> No</label>
+                                    </div>
+                                </div>
+                                <div id="conv">
+                                    <label>Prior Convictions</label>
+                                    <div class="radio-group" >
+                                        <label><input type="radio" name="priorConvictions" value="yes"> Yes</label>
+                                        <label><input type="radio" name="priorConvictions" value="no" checked> No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="legall">
+                        <label>Legal Representation</label>
+                        <div class="radio-group" id="legal-group">
+                            <label><input type="radio" name="legalRepresentation" value="yes"> Yes</label>
+                            <label><input type="radio" name="legalRepresentation" value="no" checked> No</label>
+                            <div id="attorneyNameContainer" style="display:none;">
+                                <label for="attorneyName">Attorney Name</label>
+                                <input type="text" id="attorneyName" name="attorneyName">
+                            </div>
+                        </div>
+                    </div>
+                    <div >
                         <label for="chargesFiled">Charges Filed</label>
                         <input type="text" id="chargesFiled" name="chargesFiled" required>
                     </div>
+                    
                     <div>
                         <label for="arrestDate">Arrest Date</label>
                         <input type="date" id="arrestDate" name="arrestDate" required>
@@ -60,42 +96,8 @@
                         <input type="number" id="bailAmount" name="bailAmount">
                     </div>
                     <div>
-                        <label>Criminal History</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="criminalHistory" value="yes"> Yes</label>
-                            <label><input type="radio" name="criminalHistory" value="no" checked> No</label>
-                        </div>
-                    </div>
-                    <div id="criminalHistoryDetails" style="display:none;">
-                        <div>
-                            <label>Prior Arrests</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="priorArrests" value="yes"> Yes</label>
-                                <label><input type="radio" name="priorArrests" value="no" checked> No</label>
-                            </div>
-                        </div>
-                        <div>
-                            <label>Prior Convictions</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="priorConvictions" value="yes"> Yes</label>
-                                <label><input type="radio" name="priorConvictions" value="no" checked> No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
                         <label for="financialResources">Financial Resources</label>
                         <textarea id="financialResources" name="financialResources" placeholder="Describe your financial situation and ability to pay bail"></textarea>
-                    </div>
-                    <div>
-                        <label>Legal Representation</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="legalRepresentation" value="yes"> Yes</label>
-                            <label><input type="radio" name="legalRepresentation" value="no" checked> No</label>
-                        </div>
-                    </div>
-                    <div id="attorneyNameContainer" style="display:none;">
-                        <label for="attorneyName">Attorney Name</label>
-                        <input type="text" id="attorneyName" name="attorneyName">
                     </div>
                     <div>
                         <label for="communityTies">Community Ties</label>
@@ -105,8 +107,105 @@
                         <label for="additionalComments">Additional Comments</label>
                         <textarea id="additionalComments" name="additionalComments" placeholder="Any additional information relevant to your bail application"></textarea>
                     </div>
-                    <button type="submit">Submit Bail Application</button>
+                    <button type="submit" onclick="generatePDF()"><a href="./index.html">Submit Bail Application</a></button>
+                    <button type="button" onclick="generatePDF()">Generate PDF</button>
                 </form>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+                    <script>
+                        function generatePDF() {
+                          const { jsPDF } = window.jspdf;
+                          const doc = new jsPDF();
+                        
+                          // Center the heading
+                          doc.setFontSize(22); // H1 size
+                          doc.setFont("helvetica", "bold");
+                        
+                          const title = "Comprehensive Bail Application Form";
+                          const pageWidth = doc.internal.pageSize.getWidth();
+                          const titleWidth = doc.getTextDimensions(title).w;
+                          const titleX = (pageWidth - titleWidth) / 2; // Center the title horizontally
+                        
+                          doc.text(title, titleX, 20);
+                        
+                          // Subscript for helpline
+                          doc.setFontSize(10); // Smaller font for subscript
+                          const helplineText = "Helpline: +1-800-123-4567 for important details";
+                          const helplineWidth = doc.getTextDimensions(helplineText).w;
+                          const helplineX = (pageWidth - helplineWidth) / 2; // Center the helpline horizontally
+                        
+                          doc.text(helplineText, helplineX, 27); // Slightly below the heading
+                        
+                          // Set font size and style for the content
+                          doc.setFontSize(12); // Regular size for content
+                          doc.setFont("helvetica", "normal");
+                        
+                          // Get form data
+                          const fullName = document.querySelector('input[name="fullName"]').value;
+                          const dateOfBirth = document.querySelector('input[name="dateOfBirth"]').value;
+                          const address = document.querySelector('input[name="address"]').value;
+                          const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+                          const email = document.querySelector('input[name="email"]').value;
+                          const employmentStatus = document.querySelector('select[name="employmentStatus"]').value;
+                          const chargesFiled = document.querySelector('input[name="chargesFiled"]').value;
+                          const arrestDate = document.querySelector('input[name="arrestDate"]').value;
+                        
+                          const bailAmount = document.querySelector('input[name="bailAmount"]').value;
+                          const criminalHistory = document.querySelector('input[name="criminalHistory"]:checked').value;
+                          const financialResources = document.querySelector('textarea[name="financialResources"]').value;
+                          const communityTies = document.querySelector('textarea[name="communityTies"]').value;
+                          const legalRepresentation = document.querySelector('input[name="legalRepresentation"]:checked').value;
+                          const additionalComments = document.querySelector('textarea[name="additionalComments"]').value;
+                        
+                          // Get attorney's name
+                          const attorneyName = document.querySelector('input[name="attorneyName"]').value;
+                        
+                          // Add content with spacing and formatting
+                          const lineSpacing = 10;
+                          let currentY = 40; // Starting Y position after the heading and subscript
+                        
+                          doc.text(`Full Name: ${fullName}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Date of Birth: ${dateOfBirth}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Address: ${address}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Phone Number: ${phoneNumber}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Email: ${email}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Employment Status: ${employmentStatus}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Charges Filed: ${chargesFiled}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Arrest Date: ${arrestDate}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Bail Amount: ${bailAmount}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Criminal History: ${criminalHistory}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Financial Resources: ${financialResources}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Community Ties: ${communityTies}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Legal Representation: ${legalRepresentation}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Attorney Name: ${attorneyName}`, 20, currentY);
+                          currentY += lineSpacing;
+                          doc.text(`Additional Comments: ${additionalComments}`, 20, currentY);
+                        
+                          // Add signatures
+                          doc.setFontSize(12);
+                          doc.setTextColor(0, 0, 0); // Reset color to black
+                          doc.text('Signature of Victim:', 20, doc.internal.pageSize.getHeight() - 30);
+                          doc.text('Signature of Lawyer:', pageWidth - 70, doc.internal.pageSize.getHeight() - 30);
+                        
+                          // Save the PDF
+                          doc.save("Bail_Application.pdf");
+                        }
+                        </script>
+                        
+                        
+               
             </div>
         </div>
     </div>

@@ -1,0 +1,501 @@
+Type_of_Crime,Charges_Filed,Time_Served_Days,Prior_Criminal_History,Risk_of_Flight_Score,Influence_on_Trial,Bail_Decision,Socio_Economic_Background
+Violent,IPC 420,2549,1,0.6394267984578837,None,Granted,Middle
+Non-violent,IPC 302,2188,0,0.025010755222666936,Low,Rejected,Upper
+Violent,Economic Offences Act,111,1,0.27502931836911926,High,Granted,Upper
+Cyber,IPC 420,1614,0,0.22321073814882275,High,Granted,Lower
+Violent,Narcotic Drugs Act,2425,1,0.7364712141640124,High,Rejected,Lower
+White-collar,IPC 307,2312,0,0.6766994874229113,Moderate,Granted,Upper
+Non-violent,Economic Offences Act,2716,0,0.8921795677048454,Moderate,Granted,Middle
+Cyber,IPC 376,112,0,0.08693883262941615,Moderate,Rejected,Middle
+White-collar,Economic Offences Act,344,1,0.4219218196852704,Low,Granted,Lower
+Economic,Narcotic Drugs Act,2633,1,0.029797219438070344,None,Rejected,Lower
+Drug-related,Economic Offences Act,1756,0,0.21863797480360336,High,Rejected,Lower
+White-collar,Economic Offences Act,556,0,0.5053552881033624,Moderate,Granted,Upper
+Economic,Narcotic Drugs Act,3551,1,0.026535969683863625,None,Rejected,Middle
+Cyber,Narcotic Drugs Act,1892,0,0.1988376506866485,High,Rejected,Upper
+Cyber,Cyber Crimes Act,745,0,0.6498844377795232,None,Granted,Upper
+Cyber,Cyber Crimes Act,206,0,0.5449414806032167,High,Rejected,Middle
+Non-violent,Narcotic Drugs Act,1066,1,0.2204406220406967,None,Granted,Upper
+Cyber,IPC 302,1553,1,0.5892656838759087,Moderate,Granted,Lower
+Drug-related,Narcotic Drugs Act,1341,0,0.8094304566778266,None,Rejected,Upper
+Non-violent,Cyber Crimes Act,867,1,0.006498759678061017,None,Rejected,Upper
+Cyber,Economic Offences Act,1863,0,0.8058192518328079,High,Granted,Middle
+Non-violent,Cyber Crimes Act,1339,1,0.6981393949882269,None,Granted,Upper
+Drug-related,IPC 420,1383,0,0.3402505165179919,Low,Rejected,Upper
+Drug-related,IPC 302,3118,0,0.15547949981178155,High,Rejected,Lower
+White-collar,IPC 307,3604,1,0.9572130722067812,None,Granted,Upper
+Non-violent,IPC 420,1553,0,0.33659454511262676,Low,Rejected,Lower
+Violent,Cyber Crimes Act,1140,0,0.09274584338014791,High,Granted,Middle
+Economic,Economic Offences Act,3081,1,0.09671637683346401,Moderate,Rejected,Upper
+Cyber,IPC 420,3408,1,0.8474943663474598,High,Granted,Middle
+Economic,IPC 420,1727,0,0.6037260313668911,High,Granted,Lower
+Drug-related,IPC 420,1034,1,0.8071282732743802,None,Rejected,Middle
+Economic,IPC 302,3420,1,0.7297317866938179,Low,Rejected,Lower
+Violent,IPC 307,336,1,0.5362280914547007,High,Rejected,Lower
+Economic,Economic Offences Act,1927,0,0.9731157639793706,High,Rejected,Lower
+White-collar,IPC 307,80,1,0.3785343772083535,High,Rejected,Lower
+Economic,Narcotic Drugs Act,3069,0,0.552040631273227,None,Rejected,Upper
+Drug-related,Cyber Crimes Act,2210,1,0.8294046642529949,High,Rejected,Lower
+Drug-related,IPC 376,214,0,0.6185197523642461,Low,Granted,Lower
+White-collar,IPC 302,1434,0,0.8617069003107772,None,Granted,Upper
+Cyber,IPC 307,919,1,0.577352145256762,Moderate,Granted,Middle
+Non-violent,Cyber Crimes Act,2663,0,0.7045718362149235,Moderate,Granted,Lower
+Cyber,Cyber Crimes Act,282,0,0.045824383655662215,None,Rejected,Middle
+Drug-related,IPC 302,3200,1,0.22789827565154686,Low,Granted,Upper
+Cyber,IPC 302,2670,1,0.28938796360210717,None,Rejected,Lower
+Economic,Cyber Crimes Act,165,0,0.0797919769236275,None,Granted,Lower
+Economic,Narcotic Drugs Act,3090,1,0.23279088636103018,None,Rejected,Middle
+Drug-related,IPC 307,128,1,0.10100142940972912,None,Granted,Upper
+Drug-related,IPC 376,1013,0,0.2779736031100921,High,Rejected,Lower
+Cyber,IPC 376,817,0,0.6356844442644002,Moderate,Rejected,Middle
+Cyber,IPC 376,3438,0,0.36483217897008424,Low,Granted,Lower
+Economic,IPC 420,84,1,0.37018096711688264,High,Granted,Lower
+Non-violent,IPC 307,2545,0,0.2095070307714877,Moderate,Rejected,Lower
+White-collar,IPC 420,625,1,0.26697782204911336,None,Rejected,Upper
+Non-violent,IPC 420,978,0,0.936654587712494,Moderate,Granted,Upper
+Drug-related,Cyber Crimes Act,518,0,0.6480353852465935,Moderate,Rejected,Lower
+Cyber,IPC 420,1940,0,0.6091310056669882,High,Granted,Lower
+Non-violent,Economic Offences Act,2743,0,0.171138648198097,High,Rejected,Upper
+Cyber,Narcotic Drugs Act,469,1,0.7291267979503492,Low,Granted,Middle
+Violent,Narcotic Drugs Act,2311,1,0.1634024937619284,None,Granted,Lower
+Economic,IPC 302,893,1,0.3794554417576478,None,Rejected,Middle
+White-collar,IPC 302,1905,1,0.9895233506365952,None,Granted,Upper
+Cyber,IPC 307,2866,1,0.6399997598540929,Moderate,Rejected,Upper
+White-collar,IPC 307,1050,0,0.5569497437746462,Moderate,Rejected,Middle
+Cyber,Economic Offences Act,3142,0,0.6846142509898746,None,Rejected,Upper
+Cyber,Narcotic Drugs Act,1511,1,0.8428519201898096,Low,Granted,Lower
+White-collar,IPC 302,688,1,0.7759999115462448,Moderate,Rejected,Middle
+White-collar,Cyber Crimes Act,2482,0,0.22904807196410437,Low,Granted,Middle
+Non-violent,IPC 302,2488,1,0.03210024390403776,Moderate,Granted,Middle
+Cyber,IPC 420,3064,1,0.3154530480590819,High,Granted,Lower
+Violent,IPC 376,2943,0,0.26774087597570273,High,Rejected,Lower
+Non-violent,Cyber Crimes Act,470,1,0.21098284358632646,None,Rejected,Upper
+Drug-related,IPC 376,3186,1,0.9429097143350544,High,Granted,Middle
+Drug-related,IPC 376,3356,1,0.8763676264726689,Moderate,Granted,Upper
+Economic,Narcotic Drugs Act,671,1,0.3146778807984779,Moderate,Granted,Middle
+Violent,IPC 376,1275,1,0.65543866529488,High,Granted,Upper
+Cyber,IPC 376,443,1,0.39563190106066426,High,Granted,Middle
+Violent,IPC 420,2371,0,0.9145475897405435,High,Rejected,Lower
+Drug-related,IPC 307,106,1,0.4588518525873988,None,Rejected,Upper
+Cyber,Economic Offences Act,1278,1,0.26488016649805246,High,Granted,Upper
+Violent,Narcotic Drugs Act,2359,1,0.24662750769398345,Moderate,Rejected,Upper
+White-collar,IPC 302,2775,1,0.5613681341631508,High,Rejected,Upper
+Non-violent,IPC 420,1538,0,0.26274160852293527,None,Rejected,Middle
+Cyber,IPC 376,1625,1,0.5845859902235405,None,Rejected,Lower
+White-collar,IPC 302,2929,0,0.897822883602477,Moderate,Granted,Upper
+Non-violent,IPC 420,813,1,0.39940050514039727,Moderate,Granted,Upper
+Violent,Cyber Crimes Act,312,0,0.21932075915728333,High,Rejected,Lower
+Cyber,Cyber Crimes Act,2426,1,0.9975376064951103,Moderate,Granted,Middle
+Economic,Narcotic Drugs Act,2829,1,0.5095262936764645,Low,Rejected,Middle
+Economic,IPC 376,3403,0,0.09090941217379389,Moderate,Granted,Upper
+Drug-related,Narcotic Drugs Act,2570,0,0.04711637542473457,Low,Granted,Upper
+White-collar,Cyber Crimes Act,995,1,0.10964913035065915,Low,Granted,Middle
+Cyber,IPC 420,418,1,0.62744604170309,Moderate,Granted,Lower
+White-collar,IPC 302,2856,1,0.7920793643629641,Low,Rejected,Lower
+Violent,IPC 307,3165,1,0.42215996679968404,Moderate,Granted,Upper
+Economic,IPC 376,1236,1,0.06352770615195713,Moderate,Rejected,Lower
+White-collar,Narcotic Drugs Act,3483,0,0.38161928650653676,None,Rejected,Upper
+Drug-related,IPC 302,2803,1,0.9961213802400968,Low,Granted,Upper
+Cyber,IPC 302,2460,1,0.529114345099137,Low,Rejected,Middle
+Economic,IPC 307,3300,1,0.9710783776136181,High,Rejected,Upper
+White-collar,IPC 420,496,0,0.8607797022344981,Moderate,Rejected,Lower
+White-collar,IPC 307,3262,1,0.011481021942819636,None,Rejected,Lower
+Cyber,Economic Offences Act,2319,1,0.7207218193601946,None,Granted,Upper
+Drug-related,IPC 307,3206,1,0.6817103690265748,High,Granted,Middle
+Violent,Economic Offences Act,169,0,0.5369703304087952,Low,Rejected,Upper
+Drug-related,IPC 420,1423,0,0.2668251899525428,None,Rejected,Lower
+Violent,IPC 420,2183,1,0.6409617985798081,Low,Rejected,Upper
+Non-violent,IPC 420,1755,1,0.11155217359587644,None,Rejected,Upper
+White-collar,IPC 302,2710,0,0.434765250669105,None,Rejected,Lower
+White-collar,IPC 302,1518,0,0.45372370632920644,Moderate,Rejected,Middle
+Economic,IPC 376,283,0,0.9538159275210801,Low,Granted,Lower
+Non-violent,Cyber Crimes Act,2073,1,0.8758529403781941,None,Granted,Middle
+White-collar,IPC 376,2653,0,0.26338905075109076,Moderate,Rejected,Upper
+Violent,IPC 307,1398,0,0.5005861130502983,None,Rejected,Lower
+Cyber,IPC 307,52,0,0.17865188053013137,Moderate,Granted,Lower
+Violent,IPC 376,3480,0,0.9126278393448205,Moderate,Rejected,Middle
+White-collar,Narcotic Drugs Act,1721,1,0.8705185698367669,Low,Granted,Middle
+White-collar,Cyber Crimes Act,3369,1,0.2984447914486329,Moderate,Rejected,Lower
+Violent,IPC 307,2008,1,0.6389494948660052,None,Granted,Upper
+Cyber,Narcotic Drugs Act,433,0,0.6089702114381723,High,Rejected,Lower
+Non-violent,Narcotic Drugs Act,1776,0,0.1528392685496348,None,Rejected,Upper
+White-collar,Economic Offences Act,1484,1,0.7625108000751513,None,Rejected,Upper
+Economic,Cyber Crimes Act,2604,1,0.5393790301196257,Moderate,Rejected,Upper
+Violent,Economic Offences Act,3395,1,0.7786264786305582,None,Rejected,Upper
+Violent,IPC 420,1884,1,0.5303536721951775,Moderate,Granted,Middle
+Economic,IPC 302,2898,0,0.0005718961279435053,Low,Rejected,Middle
+Violent,IPC 376,627,0,0.3241560570046731,Moderate,Rejected,Lower
+Economic,Economic Offences Act,1784,1,0.019476742385832302,Low,Granted,Middle
+Economic,Cyber Crimes Act,722,1,0.9290986162646171,High,Granted,Lower
+Economic,IPC 302,3006,1,0.8787218778231842,None,Granted,Lower
+Cyber,IPC 376,2138,1,0.8316655293611794,Low,Rejected,Upper
+Non-violent,IPC 302,2665,0,0.30751412540266143,High,Granted,Lower
+Non-violent,IPC 376,1107,0,0.05792516649418755,Moderate,Granted,Middle
+Drug-related,IPC 302,2523,0,0.8780095992040405,High,Granted,Middle
+Cyber,Economic Offences Act,3311,0,0.9469494452979941,Low,Rejected,Lower
+Drug-related,IPC 420,2205,1,0.08565345206787878,None,Rejected,Upper
+White-collar,Narcotic Drugs Act,3173,1,0.4859904633166138,High,Granted,Lower
+Non-violent,IPC 376,1981,0,0.06921251846838361,High,Rejected,Lower
+Non-violent,Narcotic Drugs Act,1905,1,0.7606021652572316,Moderate,Granted,Middle
+Non-violent,IPC 376,1785,1,0.7658344293069878,Moderate,Granted,Middle
+Violent,Cyber Crimes Act,3383,1,0.1283914644997628,None,Rejected,Upper
+Drug-related,Cyber Crimes Act,2995,0,0.4752823780987313,Moderate,Granted,Middle
+Cyber,IPC 376,2427,1,0.5498035934949439,Low,Rejected,Lower
+Drug-related,IPC 420,1100,1,0.2650566289400591,Low,Granted,Middle
+White-collar,IPC 302,1321,0,0.8724330410852574,High,Rejected,Middle
+Non-violent,IPC 376,3489,0,0.4231379402008869,Moderate,Rejected,Middle
+Cyber,IPC 302,1006,0,0.21179820544208205,Moderate,Granted,Middle
+Drug-related,IPC 420,3403,0,0.5392960887794583,High,Rejected,Upper
+Non-violent,IPC 307,355,1,0.7299310690899762,None,Granted,Middle
+Non-violent,Economic Offences Act,1143,0,0.2011510633896959,Moderate,Granted,Lower
+Cyber,Narcotic Drugs Act,3612,1,0.31171629130089495,Moderate,Rejected,Middle
+White-collar,IPC 376,1847,0,0.9951493566608947,None,Rejected,Upper
+Economic,Economic Offences Act,999,1,0.6498780576394535,Moderate,Granted,Upper
+Cyber,Cyber Crimes Act,3074,1,0.43810008391450406,Low,Rejected,Upper
+Economic,IPC 420,1904,0,0.5175758410355906,Low,Granted,Lower
+White-collar,IPC 302,2335,1,0.12100419586826572,None,Granted,Lower
+Violent,IPC 376,2500,1,0.22469733703155736,None,Granted,Middle
+Cyber,Economic Offences Act,2737,0,0.33808556214745533,Low,Granted,Lower
+Economic,IPC 302,1553,0,0.5883087184572333,Low,Rejected,Lower
+White-collar,IPC 307,1378,1,0.230114732596577,Low,Granted,Middle
+Drug-related,IPC 376,118,0,0.22021738445155947,Low,Granted,Lower
+Non-violent,Narcotic Drugs Act,2025,0,0.07099308600903254,None,Granted,Middle
+Violent,IPC 376,3486,0,0.6311029572700989,None,Rejected,Middle
+Cyber,Narcotic Drugs Act,1332,0,0.22894178381115438,High,Granted,Lower
+Economic,IPC 302,745,0,0.905420013006128,None,Granted,Lower
+Drug-related,IPC 376,1998,1,0.8596354002537465,Low,Rejected,Middle
+Economic,Economic Offences Act,869,0,0.07085734988865344,Moderate,Granted,Lower
+White-collar,IPC 420,1454,1,0.23800463436899522,Low,Rejected,Middle
+Cyber,Cyber Crimes Act,3268,1,0.6689777782962806,Low,Granted,Lower
+White-collar,IPC 420,1059,1,0.2142368073704386,None,Rejected,Upper
+Economic,IPC 307,1395,0,0.132311848725025,High,Granted,Lower
+Cyber,IPC 420,1146,0,0.935514240580671,Moderate,Granted,Upper
+Economic,Economic Offences Act,3606,0,0.5710430933252845,Moderate,Rejected,Lower
+Non-violent,IPC 307,2442,1,0.47267102631179414,High,Granted,Middle
+Cyber,IPC 302,2873,1,0.7846194242907534,Low,Granted,Upper
+Cyber,Narcotic Drugs Act,3605,1,0.8074969977666434,None,Granted,Upper
+Violent,Cyber Crimes Act,1132,1,0.1904099143618777,Low,Rejected,Middle
+Non-violent,IPC 302,2277,1,0.09693081422882333,Moderate,Rejected,Upper
+Cyber,Narcotic Drugs Act,42,0,0.4310511824063775,Moderate,Rejected,Lower
+Drug-related,Narcotic Drugs Act,2117,0,0.4235786230199208,Low,Granted,Middle
+Economic,IPC 307,783,1,0.467024668036675,Moderate,Rejected,Upper
+Drug-related,Economic Offences Act,351,0,0.7290758494598506,None,Granted,Lower
+Economic,IPC 420,989,1,0.6733645472933015,Moderate,Granted,Upper
+White-collar,IPC 420,2950,1,0.9841652113659661,None,Granted,Middle
+Economic,Cyber Crimes Act,1665,1,0.09841787115195888,Low,Granted,Lower
+Violent,Economic Offences Act,2002,0,0.4026212821022688,Low,Granted,Lower
+White-collar,Cyber Crimes Act,2275,0,0.33930260539496315,None,Rejected,Lower
+Cyber,Economic Offences Act,3106,0,0.8616725363527911,None,Rejected,Middle
+Economic,IPC 307,985,1,0.24865633392028563,None,Granted,Lower
+Violent,IPC 307,2829,0,0.1902089084408115,Moderate,Granted,Lower
+Drug-related,IPC 302,1951,0,0.4486135478331319,Low,Rejected,Middle
+White-collar,IPC 307,2646,0,0.4218816398344042,Moderate,Rejected,Upper
+White-collar,IPC 420,2916,1,0.27854514466694047,Moderate,Granted,Upper
+Violent,IPC 307,2011,0,0.2498064478821005,None,Granted,Upper
+Drug-related,IPC 307,1836,0,0.9232655992760128,Moderate,Granted,Upper
+White-collar,Narcotic Drugs Act,3248,1,0.44313074505345695,High,Granted,Upper
+Cyber,IPC 307,71,0,0.8613491047618306,High,Granted,Middle
+Economic,Economic Offences Act,382,1,0.5503253124498481,High,Rejected,Upper
+Non-violent,Economic Offences Act,1206,1,0.05058832952488124,High,Rejected,Middle
+Drug-related,Cyber Crimes Act,908,0,0.9992824684127266,High,Rejected,Middle
+Economic,IPC 302,1657,1,0.8360275850799519,None,Rejected,Lower
+Non-violent,IPC 307,2834,0,0.9689962572847513,Moderate,Granted,Lower
+White-collar,Economic Offences Act,997,1,0.9263669830081276,Moderate,Granted,Lower
+Non-violent,Cyber Crimes Act,1255,0,0.8486957344143055,High,Rejected,Middle
+Drug-related,IPC 376,2720,1,0.16631111060391401,Moderate,Granted,Upper
+Economic,IPC 376,2383,0,0.48564112545071847,High,Granted,Upper
+White-collar,Economic Offences Act,1512,0,0.21374729919918167,Moderate,Rejected,Middle
+White-collar,Narcotic Drugs Act,1939,0,0.4010402925494526,None,Granted,Lower
+White-collar,Economic Offences Act,2268,0,0.058635399972178925,Low,Rejected,Lower
+White-collar,Narcotic Drugs Act,2175,1,0.3789731189769161,High,Granted,Middle
+Non-violent,IPC 376,1409,0,0.9853088437797259,None,Granted,Lower
+White-collar,Cyber Crimes Act,1743,0,0.26520305817215195,None,Rejected,Middle
+Violent,Narcotic Drugs Act,3056,0,0.7840706019485694,High,Rejected,Lower
+White-collar,Cyber Crimes Act,2255,0,0.4550083673391433,High,Granted,Middle
+White-collar,Cyber Crimes Act,1355,1,0.4230074859901629,None,Granted,Upper
+Violent,Narcotic Drugs Act,1442,0,0.9573176408596732,High,Rejected,Upper
+Economic,IPC 420,2879,1,0.9954226894927138,High,Rejected,Upper
+Cyber,Economic Offences Act,1859,0,0.5557683234056182,Low,Granted,Middle
+Violent,Cyber Crimes Act,1110,1,0.718408275296326,Low,Granted,Lower
+Drug-related,IPC 420,1256,1,0.15479682527406413,High,Rejected,Lower
+Economic,IPC 307,1030,1,0.2967078254945642,None,Granted,Lower
+White-collar,IPC 376,945,1,0.9687093649691588,Moderate,Granted,Lower
+Non-violent,IPC 302,495,0,0.5791802908162562,High,Rejected,Lower
+Violent,IPC 376,2955,1,0.5421952013742742,High,Rejected,Upper
+Economic,IPC 376,789,1,0.7479755603790641,Moderate,Granted,Middle
+Economic,Cyber Crimes Act,1293,1,0.05716527290748308,Moderate,Rejected,Lower
+White-collar,IPC 420,490,0,0.5841775944589712,Moderate,Rejected,Middle
+Cyber,Economic Offences Act,3043,0,0.5028503829195136,Low,Rejected,Lower
+Non-violent,IPC 420,2195,0,0.8527198920482854,Low,Granted,Middle
+Non-violent,Narcotic Drugs Act,3122,1,0.15743272793948326,Low,Rejected,Middle
+Non-violent,IPC 302,2827,1,0.9607789032744504,None,Granted,Middle
+Drug-related,IPC 420,759,1,0.08011146524058688,High,Granted,Middle
+Economic,Narcotic Drugs Act,785,1,0.1858249609807232,Low,Granted,Upper
+Drug-related,IPC 302,887,0,0.5950351064500277,None,Granted,Middle
+Drug-related,IPC 420,3026,1,0.6752125536040902,None,Rejected,Lower
+Economic,IPC 376,1984,0,0.2352038950009312,Moderate,Granted,Upper
+Non-violent,IPC 376,1133,1,0.11988661394712419,Moderate,Granted,Upper
+Economic,IPC 302,2968,1,0.8902873141294375,Low,Granted,Middle
+Cyber,IPC 302,2415,1,0.24621534778862486,High,Rejected,Lower
+Economic,IPC 420,3114,1,0.5945191535334412,High,Rejected,Middle
+White-collar,Economic Offences Act,2149,0,0.6193815103321031,High,Rejected,Middle
+Economic,IPC 420,2445,1,0.4192249153358725,None,Rejected,Middle
+Violent,IPC 302,1160,0,0.5836722892912247,None,Rejected,Lower
+Cyber,Cyber Crimes Act,412,1,0.5227827155319589,None,Granted,Middle
+Violent,Economic Offences Act,3411,0,0.9347062577364272,None,Granted,Lower
+Non-violent,Economic Offences Act,796,1,0.20425919942353643,High,Rejected,Middle
+Non-violent,IPC 302,1214,0,0.7161918007894148,High,Granted,Middle
+White-collar,Narcotic Drugs Act,932,1,0.23868595261584602,Moderate,Rejected,Middle
+White-collar,Narcotic Drugs Act,1479,1,0.3957858467912545,High,Granted,Middle
+White-collar,Narcotic Drugs Act,735,0,0.6716902229599713,None,Granted,Lower
+Cyber,IPC 376,1239,0,0.2999970797987622,None,Granted,Middle
+Drug-related,IPC 376,58,0,0.31617719627185403,Low,Rejected,Upper
+Economic,Narcotic Drugs Act,2901,0,0.7518644924144021,High,Rejected,Lower
+Violent,Narcotic Drugs Act,2188,1,0.07254311449315731,High,Granted,Lower
+Cyber,Economic Offences Act,519,1,0.4582855226185861,Moderate,Rejected,Upper
+Violent,Cyber Crimes Act,1124,1,0.9984544408544423,Moderate,Rejected,Upper
+Economic,IPC 302,187,0,0.9960964478550944,None,Granted,Lower
+Drug-related,IPC 376,224,0,0.073260721099633,Low,Granted,Lower
+Violent,Economic Offences Act,2267,1,0.2131543122670404,High,Granted,Upper
+Cyber,Narcotic Drugs Act,1197,1,0.26520041475040135,High,Granted,Middle
+Economic,Cyber Crimes Act,2857,0,0.9332593779937091,Low,Rejected,Upper
+White-collar,IPC 307,518,0,0.8808641736864395,High,Granted,Middle
+White-collar,IPC 420,2613,1,0.8792702424845428,Moderate,Rejected,Upper
+White-collar,Narcotic Drugs Act,3558,1,0.36952708873888396,Low,Granted,Lower
+Economic,IPC 376,3084,1,0.15774683235723197,High,Rejected,Upper
+Drug-related,Narcotic Drugs Act,2011,1,0.833744954639807,Moderate,Granted,Lower
+Cyber,IPC 307,421,1,0.703539925087371,Moderate,Granted,Middle
+White-collar,IPC 302,3575,0,0.6116777657259501,None,Granted,Upper
+Economic,IPC 376,51,0,0.9872330636315043,High,Granted,Middle
+Violent,IPC 302,2352,1,0.6539763177107326,Low,Granted,Upper
+White-collar,Economic Offences Act,1165,1,0.007823107152157949,Moderate,Granted,Upper
+Non-violent,Economic Offences Act,1923,0,0.8171041351154616,Moderate,Rejected,Middle
+Cyber,IPC 420,1961,0,0.2993787521999779,None,Rejected,Upper
+Violent,Cyber Crimes Act,1805,1,0.6633887149660773,Low,Rejected,Lower
+Drug-related,IPC 302,1396,0,0.9389300039271039,None,Granted,Middle
+Drug-related,Narcotic Drugs Act,756,0,0.13429111439336772,Moderate,Rejected,Middle
+Economic,Cyber Crimes Act,211,1,0.11542867041910221,High,Granted,Lower
+Drug-related,IPC 307,1035,1,0.10703597770941764,Low,Rejected,Middle
+Non-violent,IPC 302,3530,1,0.5532236408848159,High,Granted,Upper
+White-collar,IPC 307,1957,1,0.2723482123148163,High,Granted,Lower
+Violent,Cyber Crimes Act,468,0,0.6048298270302239,None,Rejected,Upper
+White-collar,IPC 376,3368,0,0.7176121871387979,Moderate,Rejected,Upper
+Cyber,IPC 376,268,1,0.20359731232745293,High,Rejected,Upper
+White-collar,Narcotic Drugs Act,1642,0,0.6342379588850797,Low,Granted,Upper
+Economic,Narcotic Drugs Act,2015,1,0.2639839016304094,None,Rejected,Upper
+White-collar,Narcotic Drugs Act,304,1,0.48853185214937656,Low,Granted,Upper
+Cyber,IPC 307,2364,1,0.9053364910793232,High,Rejected,Lower
+Violent,IPC 420,2579,1,0.8461037132948555,Low,Rejected,Lower
+Non-violent,IPC 420,2812,0,0.09229846771273342,None,Rejected,Middle
+Violent,IPC 420,220,1,0.42357577256372636,None,Granted,Lower
+Violent,IPC 376,622,0,0.27668022397225167,Moderate,Rejected,Lower
+Economic,IPC 376,612,0,0.0035456890877823,Low,Granted,Lower
+Cyber,Economic Offences Act,3323,1,0.7711192230196271,None,Rejected,Lower
+Violent,IPC 420,2306,1,0.6371133773013796,None,Granted,Lower
+Violent,Cyber Crimes Act,1245,0,0.2619552624343482,Moderate,Rejected,Lower
+Non-violent,Narcotic Drugs Act,349,1,0.7412309083479308,None,Granted,Middle
+Drug-related,IPC 302,1017,1,0.5516804211263913,High,Granted,Lower
+Non-violent,Economic Offences Act,486,1,0.42768691898067934,Low,Granted,Upper
+Cyber,Cyber Crimes Act,2286,0,0.009669699608339966,Moderate,Granted,Middle
+Cyber,Cyber Crimes Act,3132,0,0.07524386007376704,High,Granted,Lower
+Economic,IPC 420,1705,0,0.883106393300143,High,Granted,Upper
+White-collar,IPC 302,2484,1,0.9039285715598931,Low,Granted,Lower
+White-collar,IPC 420,2442,1,0.5455902892055223,Moderate,Granted,Upper
+White-collar,IPC 302,3239,1,0.8345950198860167,None,Rejected,Middle
+Drug-related,Narcotic Drugs Act,2534,1,0.582509566489794,Moderate,Rejected,Middle
+Cyber,Cyber Crimes Act,925,0,0.14809378556748265,None,Rejected,Upper
+Drug-related,IPC 376,3178,0,0.12744551928213876,Low,Granted,Lower
+White-collar,IPC 420,2141,1,0.3082583499301337,Low,Granted,Lower
+White-collar,IPC 420,1559,0,0.89898148874259,High,Granted,Middle
+Non-violent,Cyber Crimes Act,1846,0,0.7961223048880417,High,Rejected,Upper
+Cyber,Economic Offences Act,1814,0,0.8607025820009028,High,Granted,Middle
+White-collar,Cyber Crimes Act,1218,0,0.8989246365264746,Low,Rejected,Upper
+Violent,Narcotic Drugs Act,3524,1,0.21007653833975404,None,Granted,Middle
+Cyber,Economic Offences Act,2411,1,0.24952973922292443,Low,Rejected,Middle
+Drug-related,IPC 307,1757,1,0.10279362167178563,Low,Rejected,Upper
+Cyber,IPC 420,1251,0,0.7801162418714427,High,Rejected,Middle
+Economic,IPC 302,2330,0,0.8841347014510089,Moderate,Granted,Lower
+Violent,Narcotic Drugs Act,2544,1,0.4063773898321168,High,Rejected,Upper
+White-collar,Cyber Crimes Act,247,1,0.6206615101507128,Moderate,Granted,Upper
+Economic,IPC 307,2498,0,0.15455333833220464,None,Granted,Upper
+Non-violent,IPC 420,3032,1,0.9298810156936744,None,Granted,Upper
+Cyber,IPC 420,407,1,0.864605696219964,None,Granted,Middle
+Cyber,Cyber Crimes Act,3125,1,0.9762060329309629,High,Granted,Lower
+Non-violent,Cyber Crimes Act,852,1,0.8107717199403969,High,Rejected,Middle
+Economic,Cyber Crimes Act,2563,1,0.8814162046633244,High,Granted,Lower
+Violent,IPC 376,865,1,0.024786361898188725,Low,Rejected,Lower
+White-collar,IPC 307,1084,0,0.7365644717550821,High,Rejected,Upper
+Economic,Narcotic Drugs Act,2706,1,0.33218546794642867,Low,Rejected,Upper
+Drug-related,Cyber Crimes Act,333,1,0.9308158860483255,None,Rejected,Upper
+White-collar,IPC 302,644,0,0.8022351389371389,High,Granted,Lower
+Economic,IPC 420,983,1,0.8640640283752794,Low,Rejected,Lower
+Violent,Narcotic Drugs Act,712,1,0.810749316574389,None,Granted,Upper
+Cyber,IPC 376,2261,0,0.26680570959447203,None,Rejected,Lower
+Economic,Cyber Crimes Act,308,1,0.7873745091354711,High,Granted,Middle
+Non-violent,Economic Offences Act,642,1,0.10809562640295711,Moderate,Rejected,Upper
+Violent,IPC 420,11,0,0.8721667829060897,Moderate,Rejected,Middle
+Cyber,Economic Offences Act,1674,0,0.8585932513377816,None,Granted,Middle
+Violent,IPC 307,1846,1,0.22243371754566443,Moderate,Rejected,Middle
+White-collar,Cyber Crimes Act,2824,0,0.816586605596929,Moderate,Rejected,Middle
+Non-violent,Cyber Crimes Act,2433,1,0.4603032346789421,Low,Rejected,Upper
+White-collar,Economic Offences Act,1925,0,0.30519086733860057,Low,Granted,Middle
+White-collar,Cyber Crimes Act,1193,0,0.7953454991528618,Low,Granted,Upper
+Drug-related,Cyber Crimes Act,134,0,0.22759548740777036,None,Granted,Upper
+Violent,Narcotic Drugs Act,949,0,0.02366443470145152,Moderate,Granted,Middle
+Violent,IPC 302,1181,0,0.19312978832770866,High,Rejected,Lower
+Economic,Cyber Crimes Act,2896,0,0.3282619511977065,Moderate,Granted,Lower
+Non-violent,Cyber Crimes Act,1159,1,0.8643529420302863,None,Granted,Middle
+Non-violent,IPC 376,2880,1,0.9668891040483611,Low,Rejected,Middle
+Drug-related,Narcotic Drugs Act,3521,1,0.2791249927218714,None,Granted,Lower
+Non-violent,IPC 420,1860,0,0.6414817386076277,Low,Rejected,Upper
+Violent,IPC 302,292,1,0.39967838436006087,None,Granted,Upper
+Drug-related,IPC 420,2816,0,0.9811496871982601,High,Rejected,Upper
+Non-violent,IPC 420,957,1,0.5362157324787219,Low,Rejected,Upper
+Drug-related,IPC 307,1084,1,0.9392371403247157,Low,Granted,Middle
+Non-violent,IPC 307,3227,0,0.11534175185142759,Moderate,Granted,Lower
+Non-violent,IPC 420,3241,0,0.970400611022228,None,Granted,Middle
+Economic,Economic Offences Act,2561,0,0.17856781617246364,Moderate,Rejected,Middle
+Non-violent,IPC 376,2416,1,0.9625343157615555,None,Rejected,Upper
+Drug-related,IPC 307,2709,1,0.2654663625229686,High,Granted,Lower
+Violent,IPC 307,3293,1,0.1084025472147111,Moderate,Granted,Lower
+Economic,IPC 307,811,1,0.43456375856464435,Low,Rejected,Upper
+Non-violent,IPC 307,1742,0,0.7285450606527043,High,Granted,Middle
+Non-violent,IPC 302,471,1,0.31367731419499123,None,Granted,Middle
+Drug-related,IPC 420,2231,1,0.6062088533061433,Low,Granted,Middle
+Economic,Economic Offences Act,921,1,0.5114230596694781,None,Rejected,Lower
+Non-violent,Economic Offences Act,2653,1,0.38519543334472717,Low,Rejected,Middle
+Violent,IPC 302,611,1,0.5765880434965995,None,Rejected,Middle
+White-collar,Narcotic Drugs Act,1089,0,0.25472250613858194,Low,Granted,Middle
+Violent,Economic Offences Act,3386,0,0.7087852838341706,None,Granted,Middle
+Non-violent,Narcotic Drugs Act,583,1,0.0016912782186294661,Moderate,Granted,Middle
+Violent,Economic Offences Act,293,1,0.9255751654990827,Low,Rejected,Upper
+Economic,Cyber Crimes Act,245,0,0.5384519970927919,Low,Granted,Upper
+Non-violent,Narcotic Drugs Act,680,1,0.7194299991448455,Moderate,Granted,Lower
+Drug-related,IPC 302,3247,1,0.7419500778394765,None,Rejected,Lower
+Economic,Cyber Crimes Act,1260,0,0.6706285044329995,Low,Granted,Lower
+Violent,IPC 420,2438,1,0.3642214717812642,Moderate,Granted,Middle
+Non-violent,Economic Offences Act,3068,1,0.06997381112631018,None,Rejected,Upper
+Economic,Narcotic Drugs Act,3377,1,0.6642376849112723,Low,Rejected,Middle
+Violent,IPC 307,2332,1,0.3302000360425964,Low,Rejected,Middle
+Non-violent,Narcotic Drugs Act,1183,1,0.31391564505835967,None,Rejected,Middle
+White-collar,IPC 376,1799,1,0.8480152795063355,Moderate,Rejected,Upper
+Cyber,IPC 307,510,0,0.7197542630139502,Low,Rejected,Middle
+Drug-related,IPC 307,1920,1,0.3003222682112642,None,Rejected,Upper
+Violent,IPC 307,2821,1,0.30928466220865325,Low,Rejected,Upper
+White-collar,Economic Offences Act,1246,1,0.40839290861921684,None,Granted,Lower
+Violent,Cyber Crimes Act,2867,0,0.40240038705772463,Low,Granted,Lower
+Cyber,Economic Offences Act,1649,1,0.295655202525947,High,Granted,Middle
+Cyber,Narcotic Drugs Act,1116,0,0.12728779905915322,Moderate,Granted,Lower
+Economic,Economic Offences Act,2050,1,0.4204463337729083,Moderate,Granted,Middle
+Drug-related,IPC 307,2212,0,0.940363670730183,High,Granted,Upper
+Drug-related,Cyber Crimes Act,2023,1,0.6773179452727329,None,Granted,Middle
+Violent,IPC 376,1794,1,0.9028055457325826,Moderate,Granted,Upper
+Cyber,IPC 302,330,1,0.6155149159513805,None,Rejected,Middle
+Drug-related,IPC 376,2450,1,0.3009498745655653,Low,Rejected,Lower
+Non-violent,IPC 420,164,0,0.5479372131356982,High,Rejected,Upper
+Drug-related,Cyber Crimes Act,3644,0,0.0004059396972875273,None,Rejected,Lower
+Violent,Cyber Crimes Act,1770,1,0.2869137168689272,None,Granted,Lower
+White-collar,IPC 307,3009,1,0.4298881499898346,Moderate,Rejected,Middle
+White-collar,IPC 376,1321,0,0.579984781195682,Low,Granted,Upper
+Drug-related,Narcotic Drugs Act,2473,0,0.6547056237030716,Moderate,Rejected,Upper
+Economic,IPC 420,1026,0,0.4649881902470142,Low,Rejected,Middle
+Cyber,Economic Offences Act,106,0,0.4421597993048074,Moderate,Rejected,Lower
+White-collar,Cyber Crimes Act,375,0,0.2137014009891003,None,Rejected,Upper
+Violent,Economic Offences Act,938,0,0.47318618590932626,None,Granted,Upper
+Violent,IPC 376,2762,0,0.9011808258282542,High,Granted,Lower
+Cyber,IPC 307,3425,0,0.7960247601267803,None,Granted,Lower
+Cyber,Narcotic Drugs Act,3525,0,0.16969139619805473,None,Rejected,Lower
+Cyber,IPC 307,2357,1,0.08479553672512175,None,Granted,Lower
+White-collar,IPC 420,2405,1,0.5154520099152164,None,Granted,Lower
+Violent,Economic Offences Act,85,1,0.6329408557657957,High,Rejected,Lower
+Cyber,Economic Offences Act,3133,0,0.3351882554098009,Low,Granted,Lower
+White-collar,IPC 376,2754,0,0.8184234645366643,High,Granted,Middle
+Cyber,Economic Offences Act,3365,0,0.7511381375407322,High,Granted,Lower
+Violent,IPC 307,1104,0,0.672795670557167,Moderate,Rejected,Middle
+Violent,IPC 420,2361,1,0.22464066599728827,Low,Rejected,Upper
+Economic,Cyber Crimes Act,165,1,0.19912993272657664,Moderate,Granted,Lower
+Drug-related,Narcotic Drugs Act,3126,1,0.024425387726826342,High,Rejected,Middle
+Non-violent,IPC 376,3098,0,0.24484254407835015,None,Rejected,Middle
+Violent,IPC 376,718,1,0.47513634421880513,Low,Granted,Middle
+Non-violent,Economic Offences Act,1928,1,0.8497376946247319,None,Granted,Upper
+Economic,IPC 420,2126,1,0.0728282291845691,High,Rejected,Middle
+Drug-related,Economic Offences Act,2669,0,0.41444101099771935,High,Rejected,Upper
+White-collar,IPC 376,1812,0,0.6297653807377137,High,Granted,Lower
+Drug-related,Narcotic Drugs Act,1140,0,0.1944352367397093,Low,Granted,Upper
+Drug-related,Narcotic Drugs Act,744,0,0.6963542504905049,Moderate,Rejected,Lower
+White-collar,IPC 376,2398,0,0.49437716901043693,Moderate,Granted,Lower
+Economic,IPC 307,1786,1,0.24398443957843885,None,Granted,Middle
+Cyber,Economic Offences Act,2601,0,0.6560580111117841,Low,Granted,Middle
+Drug-related,IPC 307,3336,0,0.00554481813803176,None,Granted,Upper
+Drug-related,Economic Offences Act,2015,1,0.7509644766184729,None,Granted,Middle
+Economic,Narcotic Drugs Act,374,1,0.7700461885740251,Moderate,Granted,Lower
+Cyber,IPC 307,1926,0,0.10658729656353894,Low,Granted,Middle
+Drug-related,Economic Offences Act,1426,1,0.4251461939427341,High,Granted,Upper
+Drug-related,IPC 420,1673,0,0.17588668170653166,None,Rejected,Upper
+Cyber,IPC 302,1366,0,0.9579660422795397,High,Rejected,Middle
+Violent,Cyber Crimes Act,1316,1,0.5179577504437408,Low,Granted,Middle
+White-collar,IPC 376,2745,0,0.05021838514064092,None,Rejected,Lower
+Violent,Economic Offences Act,429,1,0.24919827965997166,High,Granted,Middle
+White-collar,IPC 420,3514,1,0.8483363473516597,High,Granted,Upper
+White-collar,Narcotic Drugs Act,659,1,0.45646182547017256,Moderate,Granted,Upper
+Drug-related,IPC 302,1351,1,0.8014166017222645,Low,Granted,Lower
+White-collar,Cyber Crimes Act,1687,0,0.6675777325863531,Low,Rejected,Middle
+Non-violent,Economic Offences Act,2842,1,0.987892453066448,Low,Granted,Lower
+Cyber,Narcotic Drugs Act,2030,1,0.5954523184694197,None,Granted,Middle
+Cyber,Economic Offences Act,1181,0,0.9500396084431559,Moderate,Rejected,Lower
+Non-violent,IPC 302,2714,0,0.891425925810437,None,Granted,Lower
+Cyber,IPC 420,1641,1,0.6126523227617628,Low,Granted,Upper
+Economic,IPC 302,3333,0,0.7192739612759671,None,Rejected,Lower
+Cyber,Economic Offences Act,3116,1,0.504778164824402,High,Granted,Lower
+Cyber,IPC 307,2254,1,0.830569169721415,None,Granted,Upper
+Cyber,IPC 420,151,0,0.5478719506108284,None,Rejected,Lower
+White-collar,IPC 376,1863,0,0.8972081032332622,Low,Rejected,Upper
+Violent,Narcotic Drugs Act,361,1,0.7436554421595849,High,Rejected,Lower
+Economic,IPC 307,1289,1,0.4746744368230533,Low,Granted,Middle
+Cyber,Economic Offences Act,1034,0,0.25919154846501935,High,Rejected,Upper
+Economic,IPC 376,1325,0,0.24723973750965955,High,Rejected,Middle
+White-collar,IPC 302,475,1,0.6376614367761563,High,Granted,Upper
+Economic,IPC 307,3165,1,0.7658136842971655,Low,Rejected,Lower
+Economic,Economic Offences Act,1656,1,0.5212998128279821,High,Granted,Upper
+Non-violent,IPC 376,3543,0,0.6267484369817813,Moderate,Granted,Lower
+White-collar,IPC 420,2108,1,0.2745974469175383,Moderate,Rejected,Middle
+Cyber,IPC 302,3379,0,0.07748335386473582,Moderate,Rejected,Lower
+Violent,IPC 376,5,0,0.2857281508631525,Moderate,Rejected,Upper
+Violent,IPC 302,2694,0,0.2717151070821846,Low,Granted,Lower
+Violent,IPC 376,3561,1,0.3197095684187623,None,Granted,Upper
+Violent,Narcotic Drugs Act,2223,1,0.5401522225184564,None,Granted,Lower
+Cyber,IPC 420,1893,0,0.13837406151615572,Moderate,Rejected,Lower
+Violent,IPC 307,1693,0,0.23126147972818678,None,Rejected,Middle
+White-collar,IPC 376,223,1,0.6939498122990523,Moderate,Rejected,Upper
+White-collar,IPC 302,769,1,0.7064191416945522,Moderate,Rejected,Middle
+Economic,IPC 420,2124,0,0.06422885071387807,None,Granted,Upper
+Non-violent,IPC 307,1482,1,0.4075993696665867,None,Granted,Upper
+Drug-related,IPC 302,2551,1,0.5426111405039153,High,Rejected,Upper
+Violent,IPC 420,3099,1,0.41577423410315595,Moderate,Rejected,Middle
+Drug-related,IPC 302,2042,1,0.20683438951441024,None,Granted,Middle
+Drug-related,Economic Offences Act,2562,0,0.4201435177734256,None,Rejected,Middle
+Drug-related,Cyber Crimes Act,1811,1,0.9048384783401769,None,Granted,Middle
+Economic,Cyber Crimes Act,3113,1,0.5840794142042252,High,Granted,Middle
+White-collar,IPC 420,212,0,0.6955229864979681,Moderate,Granted,Middle
+Violent,Economic Offences Act,834,0,0.8567320323039342,Moderate,Rejected,Lower
+Cyber,IPC 307,1094,0,0.7655945761180695,Low,Rejected,Middle
+Economic,IPC 307,2250,1,0.38038102892771164,High,Rejected,Middle
+White-collar,IPC 302,537,1,0.0058960835839930725,High,Rejected,Upper
+Cyber,IPC 420,1180,0,0.3517588026718247,Moderate,Rejected,Upper
+White-collar,Economic Offences Act,1795,1,0.7534751250593859,Low,Rejected,Upper
+Violent,IPC 376,3608,1,0.8534479505691046,Low,Rejected,Middle
+Economic,Cyber Crimes Act,2861,0,0.9534303384701063,Moderate,Rejected,Upper
+Drug-related,Economic Offences Act,1986,1,0.41902128262982186,None,Granted,Lower
+Economic,IPC 307,498,1,0.7475156689780508,High,Granted,Lower
+Economic,Economic Offences Act,119,0,0.5461323097338391,Low,Rejected,Upper
+Violent,Cyber Crimes Act,2581,0,0.6032525889412413,None,Granted,Upper
+Drug-related,IPC 376,2494,0,0.2205386943238189,Low,Granted,Middle
+Drug-related,IPC 376,3274,1,0.21942163462143616,None,Rejected,Upper
+Non-violent,Narcotic Drugs Act,981,0,0.4358359760466366,None,Granted,Upper
+Non-violent,IPC 302,2908,1,0.02902481994671524,High,Rejected,Upper
+White-collar,IPC 302,649,1,0.33612954369838244,Low,Rejected,Upper
+Cyber,IPC 302,1273,1,0.6791418850283497,Low,Granted,Middle
+Non-violent,IPC 420,2257,1,0.4043166691376371,None,Granted,Middle
+Violent,IPC 307,57,0,0.16504473120350882,Moderate,Granted,Upper
+Economic,Economic Offences Act,2263,0,0.46739014923231015,Low,Granted,Lower
+Drug-related,IPC 307,1672,0,0.1276277972811607,High,Granted,Middle
