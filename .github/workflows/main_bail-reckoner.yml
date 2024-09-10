@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Bail-Reckoner
+name: Build and deploy Python app to Azure Web App - bail-reckoner
 
 on:
   push:
@@ -29,12 +29,6 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-      
-      - name: Install Python dependencies
-        run: |
-          python -m ensurepip --upgrade
-          pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -71,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_66D834475EBC4DC689644790078D55F2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B7CBFB990B504100BAEE1F85A7EB2C07 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_758C29FB5D0348DA853373E398B9EAA0 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CB9CE4EEF9A8405785F6965A3CEB7CB9 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_704F92D299384064B679D3A9D3945C28 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CBEB1356C76740A59EDD5F1585979D83 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Bail-Reckoner'
+          app-name: 'bail-reckoner'
           slot-name: 'Production'
           
