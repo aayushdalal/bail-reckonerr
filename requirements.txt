@@ -17,4 +17,4 @@ stem==1.8.2
 torrequest==0.1.0
 tzdata==2023.3
 urllib3==2.0.4
--e .
+
