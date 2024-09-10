@@ -7,6 +7,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+        }
         body {
             font-family: 'Merriweather', serif;
             background-color: black;
@@ -41,10 +46,12 @@
         }
 
         select, input[type="number"] {
+            display:block;
             width: 100%;
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 20px;
+            margin-right: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: white;
