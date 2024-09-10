@@ -21,3 +21,10 @@
 - **Video Demonstration:** [Watch Video](https://youtu.be/QxvYUasvuMs)
 - **Source Code:** [GitHub Repository](https://github.com/aayushdalal/bail-reckonerr/)
 - **Additional Resources:** [Other Relevant Links](https://drive.google.com/drive/u/2/folders/1efxNhHX0_6iW9BhV-hf0ADUY6TJN1sxU)
+
+##Instructions to run the project locally  :- 
+- open the file path of 'model' folder in the terminal
+- run command - python app.py
+- go to https://bail-reckoner.netlify.app/
+- all set !
+- to close press ctrl + c 
