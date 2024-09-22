@@ -164,7 +164,7 @@ a:link {
 
 .slide:nth-child(1){
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url('/bail-reckonerr/static/image_slide_1.jpg');
+    url('./image_slide_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -173,7 +173,7 @@ a:link {
 .slide:nth-child(2){
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('/bail-reckonerr/static/image_slide_2.jpg');
+        url('./image_slide_2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -182,7 +182,7 @@ a:link {
 .slide:nth-child(3){
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('/bail-reckonerr/static/image_slide_3.jpg');
+        url('./image_slide_3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
