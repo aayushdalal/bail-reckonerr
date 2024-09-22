@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="./style3_login.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-box active" id="login-box">
+            <h2>Login</h2>
+            <form action="./index.html" method="get">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit" class="form-btn">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box" id="signup-box">
+            <h2>Sign Up</h2>
+            <form action="./index.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit" class="form-btn">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showSignup() {
+            document.getElementById('login-box').classList.remove('active');
+            document.getElementById('signup-box').classList.add('active');
+        }
+
+        function showLogin() {
+            document.getElementById('signup-box').classList.remove('active');
+            document.getElementById('login-box').classList.add('active');
+        }
+    </script>
+</body>
+</html>
