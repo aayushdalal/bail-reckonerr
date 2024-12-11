@@ -12,7 +12,7 @@
 - **MEMBER_2** - 2023UBT1055 - [@Sujal-gulia](https://github.com/Sujal-gulia)
 - **MEMBER_3** - 2023UEE4525 - [@aayushdalal](https://github.com/Uaayushdalal)
 - **MEMBER_4** - 2023UEE4075 - [@Ashi1411](https://github.com/Ashi1411)
-- **MEMBER_5** - 2023UEE4005 - [@sc-2006](https://github.com/sc-2006)
+- **MEMBER_5** - 2023UEE4005 - [@shashwati2006](https://github.com/shashwati2006)
 - **MEMBER_6** - 2023UEC2529 - [@varunthakur262](https://github.com/varunthakur262)
 
 ## Project Links
